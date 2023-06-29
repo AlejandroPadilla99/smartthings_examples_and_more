@@ -1,0 +1,51 @@
+{
+    "id": "chapterpiano31024.customeFanCapabillity",
+    "version": 1,
+    "status": "proposed",
+    "name": "custome fan capabillity",
+    "ephemeral": false,
+    "attributes": {
+        "speed": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "enum": [
+                    "off",
+                    "level 1",
+                    "level 2",
+                    "level 3"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "value"
+              ]
+            },
+            "setter":"setFan",
+            "enumCommands": [] 
+        }
+    },
+    "commands": {
+        "setFan":{
+            "name": "setFan",
+            "arguments": [
+                {
+                    "name": "speed",
+                    "optional": "false",
+                    "schema":{
+                        "type":"string",
+                        "enum": [
+                            "off",
+                            "level 1",
+                            "level 2",
+                            "level 3"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
