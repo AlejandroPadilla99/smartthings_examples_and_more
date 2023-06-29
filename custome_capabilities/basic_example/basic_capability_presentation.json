@@ -13,7 +13,7 @@
                         "key":"level 1",
                         "value":"level 1",
                         "type":"inactive"
-                    },,
+                    },
                     {
                         "key":"level 2",
                         "value":"level 2",
@@ -24,7 +24,6 @@
                         "value":"level 3",
                         "type":"inactive"
                     }
-
                 ]
             }
         ],
@@ -33,12 +32,12 @@
                 "displayType": "standbyPowerSwitch",
                 "standbyPowerSwitch": {
                     "command": {
-                        "level 1": "level 1",
+                        "on": "level 1",
                         "off": "off"
                     },
                     "state": {
                         "value": "speed.value",
-                        "level 1": "level 1",
+                        "on": "level 1",
                         "off": "off"
                     }
                 }
@@ -55,10 +54,10 @@
                     "off": "off"
                 },
                 "state": {
-                    "value": "state.value",
+                    "value": "speed.value",
                     "on": "on",
                     "off": "off",
-                    "label": "{{state.value}}",
+                    "label": "{{speed.value}}",
                     "alternatives": [
                         {
                             "key": "on",
